@@ -1,0 +1,231 @@
+body {
+    background-color: #505050;
+}
+
+.main{
+    width: 1500px;
+    margin: auto;
+}
+
+.container {
+    padding-top: 10px;
+    width: 1420px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.shadow {
+    box-shadow: 8px 11px 8px 0 #000;
+}
+
+.curve {
+    border-radius: 10px;
+}
+
+.background {
+    background-color: #909090;
+}
+
+.right {
+    width: 286px;
+    float: right;
+    position: relative;
+}
+
+.logo {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 32%;
+}
+
+.lens {
+    height: auto;
+    margin-top: 0px;
+}
+
+.reload {
+    float: right;
+    width: 17px;
+    height: auto;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.disconnection {
+    width: 17px;
+    bottom: 32px;
+    height: auto;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.game {
+    width: 100%;
+    padding-left: 30px;
+    float: left;
+}
+
+.middle {
+    margin-right: 30px;
+    height: 610px;
+    width: 1020px;
+    margin-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.school{
+    width: 1000px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#pointnclick {
+    width: 1090px;
+    height: 450px;
+    padding-left: 10px;
+    text-align: center;
+    float: left;
+}
+
+#clickarea {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.clickitem {
+    display: block;
+    position: relative;
+}
+
+#start {
+    top: 500px;
+    left: 355px;
+    height: 70px;
+    width: 330px;
+}
+
+.right_side {
+    width: 131px;
+    height: 450px;
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: center;
+    float: left;
+}
+
+.card {
+    height: 80px;
+    width: 80px;
+}
+
+.sweet {
+    height: 80px;
+    width: 80px;
+}
+
+.drone {
+    height: 80px;
+    width: 80px;
+}
+
+#sweet {
+    top: 270px;
+    left: 765px;
+    height: 120px;
+    width: 130px;
+}
+
+#drone {
+    top: 370px;
+    left: 340px;
+    height: 70px;
+    width: 90px;
+}
+
+#zoom {
+    top: 387px;
+    left: 587px;
+    height: 25px;
+    width: 25px;
+}
+
+#charly {
+    top: 150px;
+    left: 520px;
+    height: 350px;
+    width: 130px;
+}
+
+#sophie {
+    top: 90px;
+    left: 590px;
+    height: 480px;
+    width: 130px;
+}
+
+#surelynot {
+    top: 540px;
+    left: 230px;
+    height: 50px;
+    width: 210px;
+}
+
+#surelynot2 {
+    top: 525px;
+    left: 230px;
+    height: 50px;
+    width: 210px;
+}
+
+#yes {
+    top: 490px;
+    left: 620px;
+    height: 50px;
+    width: 290px;
+}
+
+#yes2 {
+    top: 470px;
+    left: 550px;
+    height: 50px;
+    width: 290px;
+}
+
+#advance {
+    top: 455px;
+    left: 350px;
+    height: 50px;
+    width: 360px;
+}
+
+#advance2 {
+    top: 510px;
+    left: 390px;
+    height: 50px;
+    width: 255px;
+}
+
+.center {
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 30px;
+    float: left;
+}
+
+.left_side {
+    width: 110px;
+    height: 425px;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    float: left;
+}
+
+.action {
+    width: 70px;
+    margin-bottom: 10px;
+}

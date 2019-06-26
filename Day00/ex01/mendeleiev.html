@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mendeleiev</title>
+	<style>
+		html, body {
+			background-color: white;
+			font-family: "Times New Roman";
+			width: 100%;
+			height: 100%;
+		}
+
+		h1 {
+			color: black;
+			text-align: center;
+			font-size: 45px;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		img {
+			height: 200px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.container {
+			margin: 0 auto;
+			width: 1700px;
+			height: 100%;
+		}
+		
+		.table {
+			height: 1100px;
+		}
+
+		.row {
+			display: flex;
+			flex: 1;
+			height: 100px;
+			margin: 5px;
+		}
+
+		.cell {
+			border-color: black;
+			flex: 1;
+			margin: 0 3px;
+			border-style: solid;
+			border-width: 2px;
+			position: relative;
+		}
+
+		.element {
+			font-size: 30px;
+			font-weight: bold;
+			color: black;
+			margin: 0;
+			margin-top: 5px;
+			text-align: center;
+		}
+
+		.fullname {
+			text-align: center;
+			font-size: 12px;
+			color: black;
+		}
+
+		.electron_number {
+			font-size: 17px;
+			color: black;
+			position: absolute;
+			bottom: 1px;
+			left: 2px;
+		}
+
+		.mass {
+			font-size: 11px;
+			color: black;
+			text-align: right;
+			margin-right: 3px;
+		}
+
+		.empty {
+			border-color: transparent;
+		}
+
+		.light_green {background-color: #C3DFA4;}
+		.dark_green {background-color: #019A59;}
+		.dark_blue {background-color: #0065B3;}
+		.purple {background-color: #7A62AC;}
+		.cyan {background-color: #17BED0;}
+		.yellow {background-color: #FFCB05;}
+		.salmon {background-color: #FEDBB5;}
+		.red {background-color: #ED1A3B;}
+		.pink {background-color: #EF3C97;}
+		.mauve {background-color: #E1C1CC;}
+		.green_apple {background-color: #A5CE42;}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<h1>Periodic Table of the Elements</h1><br>
+	<img src="http://s1.lprs1.fr/images/2018/01/07/7487568_2f251f12-f3b1-11e7-aaab-8b8ac93e15fe-1_940x500.jpg" alt="The Big Bang Theory">
+	<div class="table" contenteditable="true">
+		<div class="container">
+			<div class="row">
+				<div class="cell light_green">
+					<p class="mass">1.008</p>
+					<p class="element">H</p>
+					<p class="fullname">Hydrogen</p>
+					<p class="electron_number">1</p>
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell red">
+					<p class="mass">4.0026</p>
+					<p class="element">He</p>
+					<p class="fullname">Helium</p>
+					<p class="electron_number">2</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell dark_green">
+					<p class="mass">6.94</p>
+					<p class="element">Li</p>
+					<p class="fullname">Lithium</p>
+					<p class="electron_number">3</p>
+				</div>
+				<div class="cell dark_blue">
+					<p class="mass">9.0122</p>
+					<p class="element">Be</p>
+					<p class="fullname">Beryllium</p>
+					<p class="electron_number">4</p>
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell cyan">
+					<p class="mass">10.81</p>
+					<p class="element">B</p>
+					<p class="fullname">Boron</p>
+					<p class="electron_number">5</p>
+				</div>
+				<div class="cell light_green">
+					<p class="mass">12.011</p>
+					<p class="element">C</p>
+					<p class="fullname">Carbon</p>
+					<p class="electron_number">6</p>
+				</div>
+				<div class="cell light_green">
+					<p class="mass">14.007</p>
+					<p class="element">N</p>
+					<p class="fullname">Nitrogen</p>
+					<p class="electron_number">7</p>
+				</div>
+				<div class="cell light_green">
+					<p class="mass">15.999</p>
+					<p class="element">O</p>
+					<p class="fullname">Oxygen</p>
+					<p class="electron_number">8</p>
+				</div>
+				<div class="cell salmon">
+					<p class="mass">18.998</p>
+					<p class="element">F</p>
+					<p class="fullname">Flourine</p>
+					<p class="electron_number">9</p>
+				</div>
+				<div class="cell red">
+					<p class="mass">20.18</p>
+					<p class="element">Ne</p>
+					<p class="fullname">Neon</p>
+					<p class="electron_number">10</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell dark_green">
+					<p class="mass">22.99</p>
+					<p class="element">Na</p>
+					<p class="fullname">Sodium</p>
+					<p class="electron_number">11</p>
+				</div>
+				<div class="cell dark_blue">
+					<p class="mass">24.305</p>
+					<p class="element">Mg</p>
+					<p class="fullname">Magnesium</p>
+					<p class="electron_number">12</p>
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell yellow">
+					<p class="mass">26.982</p>
+					<p class="element">Al</p>
+					<p class="fullname">Aluminium</p>
+					<p class="electron_number">13</p>
+				</div>
+				<div class="cell cyan">
+					<p class="mass">28.085</p>
+					<p class="element">Si</p>
+					<p class="fullname">Silicon</p>
+					<p class="electron_number">14</p>
+				</div>
+				<div class="cell light_green">
+					<p class="mass">30.974</p>
+					<p class="element">P</p>
+					<p class="fullname">Phosphorus</p>
+					<p class="electron_number">15</p>
+				</div>
+				<div class="cell light_green">
+					<p class="mass">32.06</p>
+					<p class="element">S</p>
+					<p class="fullname">Sulfur</p>
+					<p class="electron_number">16</p>
+				</div>
+				<div class="cell salmon">
+					<p class="mass">35.45</p>
+					<p class="element">Cl</p>
+					<p class="fullname">Chlorine</p>
+					<p class="electron_number">17</p>
+				</div>
+				<div class="cell red">
+					<p class="mass">39.948</p>
+					<p class="element">Ar</p>
+					<p class="fullname">Argon</p>
+					<p class="electron_number">18</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell dark_green">
+					<p class="mass">39.098</p>
+					<p class="element">K</p>
+					<p class="fullname">Potassium</p>
+					<p class="electron_number">19</p>
+				</div>
+				<div class="cell dark_blue">
+					<p class="mass">40.078</p>
+					<p class="element">Ca</p>
+					<p class="fullname">Calcium</p>
+					<p class="electron_number">20</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">44.956</p>
+					<p class="element">Sc</p>
+					<p class="fullname">Scandium</p>
+					<p class="electron_number">21</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">47.867</p>
+					<p class="element">Ti</p>
+					<p class="fullname">Titanium</p>
+					<p class="electron_number">22</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">50.942</p>
+					<p class="element">V</p>
+					<p class="fullname">Vanadium</p>
+					<p class="electron_number">23</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">51.996</p>
+					<p class="element">Cr</p>
+					<p class="fullname">Chromium</p>
+					<p class="electron_number">24</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">54.938</p>
+					<p class="element">Mn</p>
+					<p class="fullname">Manganese</p>
+					<p class="electron_number">25</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">55.845</p>
+					<p class="element">Fe</p>
+					<p class="fullname">Iron</p>
+					<p class="electron_number">26</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">58.933</p>
+					<p class="element">Co</p>
+					<p class="fullname">Cobalt</p>
+					<p class="electron_number">27</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">58.693</p>
+					<p class="element">Ni</p>
+					<p class="fullname">Nickel</p>
+					<p class="electron_number">28</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">63.546</p>
+					<p class="element">Cu</p>
+					<p class="fullname">Copper</p>
+					<p class="electron_number">29</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">65.38</p>
+					<p class="element">Zn</p>
+					<p class="fullname">Zinc</p>
+					<p class="electron_number">30</p>
+				</div>
+				<div class="cell yellow">
+					<p class="mass">69.723</p>
+					<p class="element">Ga</p>
+					<p class="fullname">Gallium</p>
+					<p class="electron_number">31</p>
+				</div>
+				<div class="cell cyan">
+					<p class="mass">72.63</p>
+					<p class="element">Ge</p>
+					<p class="fullname">Germanium</p>
+					<p class="electron_number">32</p>
+				</div>
+				<div class="cell cyan">
+					<p class="mass">74.922</p>
+					<p class="element">As</p>
+					<p class="fullname">Arsenic</p>
+					<p class="electron_number">33</p>
+				</div>
+				<div class="cell light_green">
+					<p class="mass">78.971</p>
+					<p class="element">Se</p>
+					<p class="fullname">Selenium</p>
+					<p class="electron_number">34</p>
+				</div>
+				<div class="cell salmon">
+					<p class="mass">79.904</p>
+					<p class="element">Br</p>
+					<p class="fullname">Bromine</p>
+					<p class="electron_number">35</p>
+				</div>
+				<div class="cell red">
+					<p class="mass">83.798</p>
+					<p class="element">Kr</p>
+					<p class="fullname">Krypton</p>
+					<p class="electron_number">36</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell dark_green">
+					<p class="mass">85.468</p>
+					<p class="element">Rb</p>
+					<p class="fullname">Rubidium</p>
+					<p class="electron_number">37</p>
+				</div>
+				<div class="cell dark_blue">
+					<p class="mass">87.62</p>
+					<p class="element">Sr</p>
+					<p class="fullname">Strontium</p>
+					<p class="electron_number">38</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">88.906</p>
+					<p class="element">Y</p>
+					<p class="fullname">Yttrium</p>
+					<p class="electron_number">39</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">91.224</p>
+					<p class="element">Zr</p>
+					<p class="fullname">Zirconium</p>
+					<p class="electron_number">40</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">92.906</p>
+					<p class="element">Nb</p>
+					<p class="fullname">Niobium</p>
+					<p class="electron_number">41</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">95.95</p>
+					<p class="element">Mo</p>
+					<p class="fullname">Molybdenum</p>
+					<p class="electron_number">42</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">(98)</p>
+					<p class="element">Tc</p>
+					<p class="fullname">Technetium</p>
+					<p class="electron_number">43</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">101.07</p>
+					<p class="element">Ru</p>
+					<p class="fullname">Ruthenium</p>
+					<p class="electron_number">44</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">102.91</p>
+					<p class="element">Rh</p>
+					<p class="fullname">Rhodium</p>
+					<p class="electron_number">45</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">106.42</p>
+					<p class="element">Pd</p>
+					<p class="fullname">Palladium</p>
+					<p class="electron_number">46</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">107.87</p>
+					<p class="element">Ag</p>
+					<p class="fullname">Silver</p>
+					<p class="electron_number">47</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">112.41</p>
+					<p class="element">Cd</p>
+					<p class="fullname">Cadmium</p>
+					<p class="electron_number">48</p>
+				</div>
+				<div class="cell yellow">
+					<p class="mass">114.82</p>
+					<p class="element">In</p>
+					<p class="fullname">Indium</p>
+					<p class="electron_number">49</p>
+				</div>
+				<div class="cell yellow">
+					<p class="mass">204.38</p>
+					<p class="element">Sn</p>
+					<p class="fullname">Tin</p>
+					<p class="electron_number">50</p>
+				</div>
+				<div class="cell cyan">
+					<p class="mass">121.76</p>
+					<p class="element">Sb</p>
+					<p class="fullname">Antimony</p>
+					<p class="electron_number">51</p>
+				</div>
+				<div class="cell cyan">
+					<p class="mass">127.6</p>
+					<p class="element">Te</p>
+					<p class="fullname">Tellurium</p>
+					<p class="electron_number">52</p>
+				</div>
+				<div class="cell salmon">
+					<p class="mass">126.9</p>
+					<p class="element">I</p>
+					<p class="fullname">Iodine</p>
+					<p class="electron_number">53</p>
+				</div>
+				<div class="cell red">
+					<p class="mass">131.29</p>
+					<p class="element">Xe</p>
+					<p class="fullname">Xenon</p>
+					<p class="electron_number">54</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell dark_green">
+					<p class="mass">132.91</p>
+					<p class="element">Cs</p>
+					<p class="fullname">Caesium</p>
+					<p class="electron_number">55</p>
+				</div>
+				<div class="cell dark_blue">
+					<p class="mass">137.33</p>
+					<p class="element">Ba</p>
+					<p class="fullname">Barium</p>
+					<p class="electron_number">56</p>
+				</div>
+				<div class="cell pink">
+					<p class="electron_number">57 - 71</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">178.49</p>
+					<p class="element">Hf</p>
+					<p class="fullname">Hafnium</p>
+					<p class="electron_number">72</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">180.95</p>
+					<p class="element">Ta</p>
+					<p class="fullname">Tantalum</p>
+					<p class="electron_number">73</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">183.84</p>
+					<p class="element">W</p>
+					<p class="fullname">Tungsten</p>
+					<p class="electron_number">74</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">186.21</p>
+					<p class="element">Re</p>
+					<p class="fullname">Rhenium</p>
+					<p class="electron_number">75</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">190.23</p>
+					<p class="element">Os</p>
+					<p class="fullname">Osmium</p>
+					<p class="electron_number">76</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">192.22</p>
+					<p class="element">Ir</p>
+					<p class="fullname">Iridium</p>
+					<p class="electron_number">77</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">195.08</p>
+					<p class="element">Pt</p>
+					<p class="fullname">Platinum</p>
+					<p class="electron_number">78</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">196.97</p>
+					<p class="element">Au</p>
+					<p class="fullname">Gold</p>
+					<p class="electron_number">79</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">200.59</p>
+					<p class="element">Hg</p>
+					<p class="fullname">Mercury</p>
+					<p class="electron_number">80</p>
+				</div>
+				<div class="cell yellow">
+					<p class="mass">204.38</p>
+					<p class="element">Tl</p>
+					<p class="fullname">Thallium</p>
+					<p class="electron_number">81</p>
+				</div>
+				<div class="cell yellow">
+					<p class="mass">207.2</p>
+					<p class="element">Pb</p>
+					<p class="fullname">Lead</p>
+					<p class="electron_number">82</p>
+				</div>
+				<div class="cell yellow">
+					<p class="mass">208.98</p>
+					<p class="element">Bi</p>
+					<p class="fullname">Bismuth</p>
+					<p class="electron_number">83</p>
+				</div>
+				<div class="cell yellow">
+					<p class="mass">(209)</p>
+					<p class="element">Po</p>
+					<p class="fullname">Polonium</p>
+					<p class="electron_number">84</p>
+				</div>
+				<div class="cell salmon">
+					<p class="mass">(210)</p>
+					<p class="element">At</p>
+					<p class="fullname">Astatine</p>
+					<p class="electron_number">85</p>
+				</div>
+				<div class="cell red">
+					<p class="mass">(222)</p>
+					<p class="element">Rn</p>
+					<p class="fullname">Radon</p>
+					<p class="electron_number">86</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell dark_green">
+					<p class="mass">(223)</p>
+					<p class="element">Fr</p>
+					<p class="fullname">Francium</p>
+					<p class="electron_number">87</p>
+				</div>
+				<div class="cell dark_blue">
+					<p class="mass">(226)</p>
+					<p class="element">Ra</p>
+					<p class="fullname">Radium</p>
+					<p class="electron_number">88</p>
+				</div>
+				<div class="cell mauve">
+					<p class="electron_number">89 - 103</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">(267)</p>
+					<p class="element">Rf</p>
+					<p class="fullname">Rutherfordium</p>
+					<p class="electron_number">104</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">(268)</p>
+					<p class="element">Db</p>
+					<p class="fullname">Dubnium</p>
+					<p class="electron_number">105</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">(269)</p>
+					<p class="element">Sg</p>
+					<p class="fullname">Seaborgium</p>
+					<p class="electron_number">106</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">(270)</p>
+					<p class="element">Bh</p>
+					<p class="fullname">Bohrium</p>
+					<p class="electron_number">107</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">(277)</p>
+					<p class="element">Hs</p>
+					<p class="fullname">Hassium</p>
+					<p class="electron_number">108</p>
+				</div>
+				<div class="cell green_apple">
+					<p class="mass">(278)</p>
+					<p class="element">Mt</p>
+					<p class="fullname">Meitnerium</p>
+					<p class="electron_number">109</p>
+				</div>
+				<div class="cell green_apple">
+					<p class="mass">(281)</p>
+					<p class="element">Ds</p>
+					<p class="fullname">Darmstadtium</p>
+					<p class="electron_number">110</p>
+				</div>
+				<div class="cell green_apple">
+					<p class="mass">(282)</p>
+					<p class="element">Rg</p>
+					<p class="fullname">Roentgenium</p>
+					<p class="electron_number">111</p>
+				</div>
+				<div class="cell purple">
+					<p class="mass">(282)</p>
+					<p class="element">Cn</p>
+					<p class="fullname">Copernicium</p>
+					<p class="electron_number">112</p>
+				</div>
+				<div class="cell green_apple">
+					<p class="mass">(286)</p>
+					<p class="element">Nh</p>
+					<p class="fullname">Nihonium</p>
+					<p class="electron_number">113</p>
+				</div>
+				<div class="cell green_apple">
+					<p class="mass">(289)</p>
+					<p class="element">Fl</p>
+					<p class="fullname">Flerovium</p>
+					<p class="electron_number">114</p>
+				</div>
+				<div class="cell green_apple">
+					<p class="mass">(290)</p>
+					<p class="element">Mc</p>
+					<p class="fullname">Moscovium</p>
+					<p class="electron_number">115</p>
+				</div>
+				<div class="cell green_apple">
+					<p class="mass">(293)</p>
+					<p class="element">Lv</p>
+					<p class="fullname">Livermorium</p>
+					<p class="electron_number">116</p>
+				</div>
+				<div class="cell green_apple">
+					<p class="mass">(294)</p>
+					<p class="element">Ts</p>
+					<p class="fullname">Tennessine</p>
+					<p class="electron_number">117</p>
+				</div>
+				<div class="cell green_apple">
+					<p class="mass">(294)</p>
+					<p class="element">Og</p>
+					<p class="fullname">Oganesson</p>
+					<p class="electron_number">118</p>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell pink">
+					<p class="mass">138.91</p>
+					<p class="element">La</p>
+					<p class="fullname">Lanthanum</p>
+					<p class="electron_number">57</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">140.12</p>
+					<p class="element">Ce</p>
+					<p class="fullname">Cerium</p>
+					<p class="electron_number">58</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">140.91</p>
+					<p class="element">Pr</p>
+					<p class="fullname">Praseodymium</p>
+					<p class="electron_number">59</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">144.24</p>
+					<p class="element">Nd</p>
+					<p class="fullname">Neodymium</p>
+					<p class="electron_number">60</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">144.24</p>
+					<p class="element">Pm</p>
+					<p class="fullname">Promethium</p>
+					<p class="electron_number">61</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">150.36</p>
+					<p class="element">Sm</p>
+					<p class="fullname">Samarium</p>
+					<p class="electron_number">62</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">151.96</p>
+					<p class="element">Eu</p>
+					<p class="fullname">Europium</p>
+					<p class="electron_number">63</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">157.25</p>
+					<p class="element">Gd</p>
+					<p class="fullname">Gadolinium</p>
+					<p class="electron_number">64</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">158.93</p>
+					<p class="element">Tb</p>
+					<p class="fullname">Terbium</p>
+					<p class="electron_number">65</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">162.5</p>
+					<p class="element">Dy</p>
+					<p class="fullname">Dysprosium</p>
+					<p class="electron_number">66</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">164.93</p>
+					<p class="element">Ho</p>
+					<p class="fullname">Holmium</p>
+					<p class="electron_number">67</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">167.26</p>
+					<p class="element">Er</p>
+					<p class="fullname">Erbium</p>
+					<p class="electron_number">68</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">168.93</p>
+					<p class="element">Tm</p>
+					<p class="fullname">Thulium</p>
+					<p class="electron_number">69</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">173.05</p>
+					<p class="element">Yb</p>
+					<p class="fullname">Ytterbium</p>
+					<p class="electron_number">70</p>
+				</div>
+				<div class="cell pink">
+					<p class="mass">174.97</p>
+					<p class="element">Lu</p>
+					<p class="fullname">Lutetium</p>
+					<p class="electron_number">71</p>
+				</div>
+				<div class="cell empty">
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell empty">
+				</div>
+				<div class="cell empty">
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(227)</p>
+					<p class="element">Ac</p>
+					<p class="fullname">Actinium</p>
+					<p class="electron_number">89</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">232.04</p>
+					<p class="element">Th</p>
+					<p class="fullname">Thorium</p>
+					<p class="electron_number">90</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">231.04</p>
+					<p class="element">Pa</p>
+					<p class="fullname">Protactinium</p>
+					<p class="electron_number">91</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">238.03</p>
+					<p class="element">U</p>
+					<p class="fullname">Uranium</p>
+					<p class="electron_number">92</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(237)</p>
+					<p class="element">Np</p>
+					<p class="fullname">Neptunium</p>
+					<p class="electron_number">93</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(244)</p>
+					<p class="element">Pu</p>
+					<p class="fullname">Plutonium</p>
+					<p class="electron_number">94</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(243)</p>
+					<p class="element">Am</p>
+					<p class="fullname">Americium</p>
+					<p class="electron_number">95</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(247)</p>
+					<p class="element">Cm</p>
+					<p class="fullname">Curium</p>
+					<p class="electron_number">96</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(247)</p>
+					<p class="element">Bk</p>
+					<p class="fullname">Berkelium</p>
+					<p class="electron_number">97</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(251)</p>
+					<p class="element">Cf</p>
+					<p class="fullname">Californium</p>
+					<p class="electron_number">98</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(252)</p>
+					<p class="element">Es</p>
+					<p class="fullname">Einsteinium</p>
+					<p class="electron_number">99</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(257)</p>
+					<p class="element">Fm</p>
+					<p class="fullname">Fermium</p>
+					<p class="electron_number">100</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(258)</p>
+					<p class="element">Md</p>
+					<p class="fullname">Mendelevium</p>
+					<p class="electron_number">101</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(259)</p>
+					<p class="element">No</p>
+					<p class="fullname">Nobelium</p>
+					<p class="electron_number">102</p>
+				</div>
+				<div class="cell mauve">
+					<p class="mass">(266)</p>
+					<p class="element">Lr</p>
+					<p class="fullname">Lawrencium</p>
+					<p class="electron_number">103</p>
+				</div>
+				<div class="cell empty">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

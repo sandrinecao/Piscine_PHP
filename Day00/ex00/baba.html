@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>B.A.BA</title>
+	<style>
+		html, body {
+			background-color: #FFC0CB;
+			margin: 0px;
+		}
+
+		.row {
+			display: flex;
+		}
+
+		.column {
+			text-align: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		h1 {
+			text-align: center;
+			color: white;
+			font-size: 50px;
+		}
+
+		.images {
+			width: 320px;
+			height: auto;
+		}
+
+		a {
+			font-size: 20px;
+			margin: 10px 0px;
+		}
+
+		footer {
+			height: 50px;
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+			border-style: solid;
+			border-width: 1px 0 0 0;
+		}
+
+		#copyright {
+			text-align: right;
+			font-style: italic;
+			margin: 20px 20px;
+			font-family: 'Courier New', monospace;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Ce titre est génial !</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<img class="images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/320px-Amazon_logo.svg.png" alt="Amazon Logo" title="Amazon">
+				<p><a href="https://www.amazon.fr/">Amazon</a></p>
+			</div>
+			<div class="column">
+				<img class="images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aliexpress_logo.svg/320px-Aliexpress_logo.svg.png" alt="AliExpress logo" title="AliExpress">
+				<p><a href="https://www.aliexpress.com">AliExpress</a></p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<p id="copyright">&copy; scao 2019</p>
+		</div>
+	</footer>
+</body>
+</html>
