@@ -1,0 +1,21 @@
+<- Vertex ----------------------------------------------------------------------
+
+The Vertex class enables you to save Vertex geometrical entities.
+A Vertex has 3D coordinates, a variable to manage homogeneous coordinates
+and a specific Color, which is an iteration of the Color class.
+
+To construct a Vertex you need to send an array with the following keys:
+- '_x' for x coordinates;
+- '_y' idem y;
+- '_z' idem z;
+
+And optional values:
+- '_w' for homogeneous variable (optional, set to 1.0 if not given);
+- '_color' for the color;
+All those attributes are private.
+
+The following methods are available:
+- Getters for all property;
+- Setters for all property;
+- doc method which displays the doc;
+---------------------------------------------------------------------- Vertex ->

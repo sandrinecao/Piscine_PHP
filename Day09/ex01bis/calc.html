@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex01 bis</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		setInterval(function() {alert("Please, use me...")}, 30000);
+
+		$("document").ready(function() {
+			$('#button').click(function() {
+				var $x = $("#ope").val(),
+				$l = $("#leftMem").val(),
+				$r = $("#rightMem").val();
+
+				if (isNaN($l) || isNaN($r) || parseInt($l) < 0 || parseInt($r) < 0) {
+					console.log("Error :(");
+					alert("Error :(");
+				}
+				else if (($x == '/' || $x == '%') && parseInt($r) == 0) {
+					console.log("It's over 9000!");
+					alert("It's over 9000!");
+				}
+				else {
+					var res = eval($l + $x + $r);
+					console.log(res);
+					alert(res);
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<form>
+		<input type="text" id="leftMem">
+		<select id="ope">
+			<option selected value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="text" id="rightMem">
+		<input id="button" type="submit" value="Try me!">
+	</form>
+</body>
+</html>
